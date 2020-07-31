@@ -1,0 +1,130 @@
+@{
+    ViewData["Title"] = "Perfil";
+}
+<form action="">
+    <div class="container" id="datosPrinc">
+        <!--Aquí van los datos principales-->
+        <h4 id="h41">
+            Datos Principales
+        </h4>
+        <br>
+        <input type="text" placeholder="Nombre de la Tienda" id="input1">
+        <br>
+        <input type="number" placeholder="RISE/RUC" id="input2">
+        <br>
+        <label for="permisos" id="permisos">Permisos de Funcionamiento</label>
+        <input type="file" name="permisos" id="archivoPermisos">
+        <br>
+        <label for="foto">Agregar una Foto</label>
+        <span id="fotoTienda">
+            <input type="file" name="foto" id="foto">
+        </span>
+        <br>
+        <span id="empacador">
+            <!--Este espacio es para información del encargado de empaquetar-->
+            <h4>
+                Encargado de Empaquetado
+            </h4>
+            <br>
+            <input type="text" name="" id="nombresEmpacador" placeholder="Nombre y Apellido" >
+            <br>
+            <label for="pruebaPcr" id="label1">Prueba PCR</label>
+            <input type="file" name="" id="pruebaPcr">
+        </span>
+        <br>
+        <span id="repartidor">
+            <!--Este espacio es para información del encargado de distribuir (Solo si la tienda tiene)-->
+            <h4>
+                Encargado de Distribución
+            </h4>
+            <br>
+            <input type="text" name="" id="nombresRepartidor" placeholder="Nombre y Apellido" >
+            <br>
+            <label for="pruebaPcr" id="label2">Prueba PCR</label>
+            <input type="file" name="" id="pruebaPcr">
+        </span>
+    </div>
+    <div class="container" id="container2">
+        <!--Aquí van el usuario y contraseña-->
+        <h4>
+            Información privada
+        </h4>
+        <br>
+        <input type="email" placeholder="Correo Electrónico" id="email">
+        <br>
+        <input type="number" placeholder="Número Celular" id="celular">
+        <br>
+        <input type="password" placeholder="Contraseña" id="clave">
+        <br>
+        <button id="button1">
+            Editar
+        </button>
+    </div>
+    <div class="container">
+        <!--Aquí van los datos de ubicacion-->
+        <h4>
+            Ubicación
+        </h4>
+        <br>
+        <label for="callePrincipal">Calle Princial</label>
+        <input type="text" name="" id="callePrincipal">
+        <br>
+        <label for="calleSecundaria">Calle Secundaria</label>
+        <input type="text" name="" id="calleSecundaria">
+        <br>
+        <label for="barrio">Barrio</label>
+        <input type="text" name="" id="barrio">
+        <br>
+        <label for="maps">Google Maps</label>
+        <br>
+        <span id="maps">
+            <!--Aquí va el mapa de google maps-->
+            <img src="https://i.blogs.es/6f154e/google-maps/840_560.jpg" alt="Google Maps" id="goglmap" style="height: 80px; width: 120px;">
+        </span>
+    </div>
+    <div class="container">
+        <!--Aquí van la información de entrega y forma de pago-->
+        <h4>
+            Entrega y Forma de Pago
+        </h4>
+        <br>
+        <h5>
+            La forma en que realiza sus entregas
+        </h5>
+        <br>
+        <input type="checkbox" name="" id="domicilio">
+        <label for="domicilio">Entrega a domicilio</label>
+        <br>
+        <input type="checkbox" name="" id="pedido">
+        <label for="pedido">Reserva de pedidos</label>
+        <br>
+        <br>
+        <h5>
+            La Forma en que realiza sus cobros
+        </h5>
+        <br>
+        <input type="checkbox" name="" id="transferBanc">
+        <label for="transferBanc">Transferencia bancaria</label>
+        <br>
+        <input type="checkbox" name="" id="tarjetas">
+        <label for="tarjetas">Tarjeta de debito/crédito</label>
+        <br>
+        <input type="checkbox" name="" id="mediosElectronicos">
+        <label for="mediosElectronicos">Otros medios electronicos</label>
+        <br>
+        <input type="checkbox" name="" id="efectivo">
+        <label for="efectivo">Efectivo</label>
+        <br>
+        <br>
+        <h5>
+            Facturación
+        </h5>
+        <br>
+        <input type="checkbox" name="" id="factElectronica">
+        <label for="factElectronica">Electrónica</label>
+        <br>
+        <input type="checkbox" name="" id="factFisica">
+        <label for="factFisica">Fisica</label>
+        <br>
+    </div>
+</form>
