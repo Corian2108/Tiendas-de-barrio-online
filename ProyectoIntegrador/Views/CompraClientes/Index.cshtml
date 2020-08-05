@@ -1,0 +1,129 @@
+﻿@model IEnumerable<ProyectoIntegrador.Models.CompraCliente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- Wrapper for slides -->
+    <div id="contenedor">
+        <div id="menu">
+            <!-- panel-footer -->
+            <div class="content" style="text-align:left">
+                <button type="button" value="enviar" class="btn btn-dark">Perfil</button>
+            </div>
+
+            <div class="my-custom-scrollbar">
+                <table class="table table-bordered table-white">
+                    <tbody>
+                        <tr>
+                        <tr>
+
+                            <th><center>PRODUCTOS</center></th>
+                            <th><center>DESCRIPCIÓN</center></th>
+                            <th><center>CANTIDAD</center></th>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="~/imagenes/producto1.jpg" alt="" height="250" width="250" />
+                            </td>
+                            <td>
+                                Pollo entero, Extra grande <br> Precio:
+                            </td>
+                            <td>
+                                <input type="number" id="tentacles" placeholder="2" name="tentacles"
+                                       min="1" max="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="~/imagenes/producto5.jpg" alt="" height="200" width="200" />
+                            </td>
+                            <td>
+                                Lechuga Organica <br> Precio:
+                            </td>
+                            <td>
+                                <input type="number" id="tentacles" placeholder="2" name="tentacles"
+                                       min="1" max="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="~/imagenes/producto2.jpg" alt="" height="250" width="250" />
+                            </td>
+                            <td>
+                                Cebollas blancas grandes <br> Precio:
+                            </td>
+                            <td>
+                                <input type="number" id="tentacles" placeholder="2" name="tentacles"
+                                       min="1" max="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="~/imagenes/producto3.jpg" alt="" height="250" width="250" />
+                            </td>
+                            <td>
+                                Aceite de Oliva <br> Precio:
+                            </td>
+                            <td>
+                                <input type="number" id="tentacles" placeholder="2" name="tentacles"
+                                       min="1" max="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="~/imagenes/producto4.jpg" alt="" height="250" width="250" />
+                            </td>
+                            <td>
+                                Papa Chola <br> Precio:
+                            </td>
+                            <td>
+                                <input type="number" id="tentacles" placeholder="2" name="tentacles"
+                                       min="1" max="20">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br><br>
+            <center>
+                    <button type="button" class="btn btn-dark">Añadir</button>
+            </center>
+        </div>
+        <div class="content" style="text-align:right">
+            <button type="button" value="enviar" class="btn btn-dark">Pedidos</button>
+        </div>
+        <br>
+        <center>
+            <h3>INFORMACIÓN</h3>
+            <br>
+            <!-- Search form -->
+            <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan active-cyan-2 mt-2">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar"
+                       aria-label="Search">
+            </form>
+        </center>
+        <br><br>
+        <center>
+            <h4>Mis Compras</h4>
+        </center>
+        <br>
+        <div id="checkboxes">
+            <input type="checkbox" name="mis1" id="id1" onclick="add_sub(this);"><label> 1 Pollo entero</label><br>
+            <input type="checkbox" name="mis2" id="id2" onclick="add_sub(this);"><label> 4 Cebolla Blanca</label><br>
+            <input type="checkbox" name="mis6" id="id3" onclick="add_sub(this);"><label> 1Libra Papas</label><br>
+            <input type="checkbox" name="mis6" id="id4" onclick="add_sub(this);"><label> 1 Lechuga</label><br>
+            <input type="checkbox" name="mis7" id="id5" onclick="add_sub(this);"><label> 1 Aceite</label>
+        </div>
+        <br>
+        <textarea id="textarea" name="type" rows="5" cols="35" onclick="this.focus();this.select();">Escribe aquí tus comentarios</textarea>
+        <br><br><br>
+        <center>
+            <button type="button" class="btn btn-dark">Comprar</button>
+        </center>
+
+    </div>
+
