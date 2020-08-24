@@ -73,6 +73,7 @@ body {
 }
 
 .footer {
+    display: none;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -84,140 +85,302 @@ body {
 
 /*Estilos agregados*/
 
-#datosPrinc {
-    border-radius: 14px;
+.contenedor{
     border: 1px solid;
-    height: 408px;
-    width: 730px;
+    border-radius: 10px;
+}
+
+.principal{
+    position: absolute;
+    left: 25%;
+}
+
+.titulo{
     position: relative;
-    left: -17%;
+    background: white;
+    margin: 0;
+}
+
+.input{
+    position: relative;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    border-style: none;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.secundario{
+    background: none;
+    color: rgba(56, 56, 56, 0.699);
+}
+
+.oculto{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.button{
+    position: relative;
+}
+
+#datosPrinc {
+    top: 90px;
+    height: 500px;
+    width: 410px;
+}
+
+#datosUbic{
+    top: 615px;
+    width: 410px;
+}
+
+#datosEntrega{
+    top: 895px;
+    width: 410px;
 }
 
 #h41 {
-    position: absolute;
     top: -18px;
-    background: white;
+    width: 188px;
+    left: 2%;
 }
 
-#input1 {
-    position: absolute;
-    margin-left: 1%;
-    margin-bottom: 1%;
+#input1{
+    top: -30px;
 }
 
-#input2 {
-    position: absolute;
-    margin-left: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+#input2{
+    top: -28px;
 }
 
 #permisos {
-    position: absolute;
-    right: 25%;
-    top: 1%;
+    left: 49%;
+    top: -95px;
+}
+
+#permisosPdf {
+    height: 23px;
+    width: 207px;
+    left: 47%;
+    top: -90px;
+}
+
+#adjuntar{
+    margin: 26%;
 }
 
 #archivoPermisos {
-    position: absolute;
-    right: 18%;
-    top: 8%;
+    margin: 0;
+    top: -25px;
+    width: 205px;
+    height: 23px;
+}
+
+#fotoLabel {
+    top: -50px;
+    left: 10%;
+}
+
+#fotoTienda{
+    height: 130px;
+    width: 210px;
+    left: 46%;
+    top: -118px;
+}
+
+#fotoSelect{
+    top: 50px;
+    left: 50px;
+}
+
+#foto{
+    height: 130px;
+    width: 210px;
+    margin: 0;
+    top: -25px;
 }
 
 #empacador {
-    position: absolute;
-    border: 1px solid;
-    border-radius: 12px;
-    width: 96%;
+    width: 95%;
     height: auto;
-    margin-top: 4px;
+    margin: 2%;
+    top: -130px;
 }
 
-#nombreEmpacador {
-    position: absolute;
-    top: 35px;
-    right: 14%;
-    border-radius: 8px;
-    width: 70%;
+#encEmp{
+    top: -14px;
+    width: 247px;
+    left: 5px;
+    font-size: 120%;
+}
+
+#nombresEmpacador {
+    top: -15px;
+    left: 0;
+    width: 95%;
     text-align: center;
-    border: 1px solid;
+}
+
+#pruebaPdf{
+    top: -10px;
+    left: 0;
+    width: 96%;
+    height: 22px;
 }
 
 #label1 {
-    position: absolute;
-    top: 59px;
-    left: 44%;
+    top: 0;
+    left: 40%;
 }
 
-#pruebaPcr {
-    position: relative;
-    right: -23%;
-    top: 0px;
-    margin-bottom: 6px;
+#pruebaPcrEmp {
+    width: 371px;
+    left: -5px;
+    top: -25px;
+    height: 22px;
 }
 
 #repartidor {
-    position: absolute;
-    border: 1px solid;
-    border-radius: 11px;
+    width: 95%;
     height: auto;
-    width: 96%;
-    margin-top: 3px;
-    top: 268px;
+    margin: 2%;
+    top: -150px;
+}
+
+#encDist{
+    width: 231px;
+    top: -14px;
+    left: 5px;
+    font-size: 120%;
 }
 
 #nombresRepartidor {
-    position: absolute;
-    top: 33px;
-    border: 1px solid;
-    border-radius: 8px;
-    left: 15%;
-    width: 70%;
+    top: -15px;
+    left: 0;
+    width: 95%;
     text-align: center;
 }
 
-#label2 {
-    position: absolute;
-    top: 59px;
-    right: 44%;
+#purebaPdfRep{
+    top: -10px;
+    left: 0;
+    width: 96%;
+    height: 22px;
 }
 
-#container2 {
-    border: 1px solid;
-    margin-top: 5px;
-    border-radius: 8px;
-    height: 200px;
-    width: 19%;
-    position: relative;
-    right: -38%;
-    top: -410px;
+#label2 {
+    top: 0;
+    left: 40%;
+}
+
+#pruebaPcrRep{
+    width: 371px;
+    left: -5px;
+    top: -25px;
+    height: 22px;
+}
+
+#datosPriv{
+    height: 130px;
+    width: 195px;
+    left: 70%;
+    top: 90px;
+}
+
+#tituloPrivado{
+    top: -18px;
+    left: 5px;
+    width: 83px;
 }
 
 #email {
-    position: absolute;
-    border: 1px solid;
-    border-radius: 5px;
-    top: 68px;
+    top: -30px;
+    margin-left: 3%;
 }
 
 #celular {
-    position: absolute;
-    border: 1px solid;
-    border-radius: 5px;
-    top: 102px;
+    top: -25px;
+    margin-left: 3%;
 }
 
 #clave {
-    position: absolute;
-    border: 1px solid;
-    border-radius: 5px;
-    top: 133px;
+    top: -20px;
+    margin-left: 3%;
 }
 
 #button1 {
-    position: absolute;
-    border: 1px solid;
-    border-radius: 5px;
-    top: 165px;
     left: 35%;
+    top: -5px;
 }
+
+#tituloUbic{
+    top: -18px;
+    width: 107px;
+    left: 5px;
+}
+
+#calle1Lab{
+    left: 10%;
+    top: -20px;
+}
+
+#callePrincipal{
+    left: 15%;
+    top: -20px;
+    width: 55%;
+}
+
+#calle2Lab{
+    left: 5%;
+    top: -20px;
+}
+
+#calleSecundaria{
+    left: 8.5%;
+    top: -20px;
+    width: 55%;
+}
+
+#barrioLab{
+    left: 22%;
+    top: -20px;
+}
+
+#barrio{
+    left: 26.5%;
+    top: -20px;
+    width: 55%;
+}
+
+#labelMaps{
+    left: 37%;
+    top: -15px;
+}
+
+#maps{
+    position: relative;
+    left: 35%;
+    top: -10px;
+    cursor: pointer;
+}
+
+#tituloEntrega{
+    top: -19px;
+    left: 5px;
+    width: 274px;
+}
+
+#checList{
+    position: relative;
+    width: 55%;
+    left: 22.5%;
+}
+
+#tablaDetalle {
+    width: 29%;
+    left: 33%;
+    padding: 1%;
+    text-align: center;
+}
+
